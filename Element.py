@@ -32,11 +32,11 @@ class Element:
 
         # answer for metal/nonmetal/metaloid
         if self.mnm == 'Metal':
-            self.mnm_answer = 'is metal'
+            self.mnm_answer = 'metal'
         elif self.mnm == 'Nonmetal':
-            self.mnm_answer = 'is nonmetal'
+            self.mnm_answer = 'nonmetal'
         else:
-            self.mnm_answer = 'is metaloid'
+            self.mnm_answer = 'metaloid'
 
         # history
         if self.discoverer == 'Prehistoric':
@@ -49,15 +49,15 @@ class Element:
             self.history = f'The element was discovered by {self.discoverer} in {self.year}.'
 
     def __str__(self):
-        return f"Atomic number of {self.element}/({self.symbol}) is {self.atomic_number}. The atomic mass of" \
-               f"this element is {self.atomic_mass} u. The nucleus of {self.symbol} contains {self.atomic_number}" \
+        return f"Atomic number of {self.element}/({self.symbol}) is {self.atomic_number}. The atomic mass of " \
+               f"this element is {self.atomic_mass} u. The nucleus of {self.symbol} contains {self.atomic_number} " \
                f" protons {self.number_of_neutrons} nautorns. The element is located in the period no. " \
                f"{self.period}, in the group no. {self.group} and belongs to the group of {self.type}. This " \
                f"{self.mnm_answer} as a pure copound it is {self.phase} under normal conditions and " \
                f"{self.radioactive_answer}. The most common properties are as follow: atomic radius " \
-               f"{self.atomic_radius} Å, lectronegativity {self.electronegativity}, first ionization" \
-               f"{self.first_ionization}, melting point {self.melting_point} °C, boiling point {self.boiling_point} °C, " \
-               f"number_of_valence {self.number_of_valence}. {self.history}"
+               f"{self.atomic_radius} Å, electronegativity {self.electronegativity}, first ionization " \
+               f"{self.first_ionization}, melting point {self.melting_point} K, boiling point {self.boiling_point} K, " \
+               f"number of valence {self.number_of_valence}. {self.history}."
 
     def __repr__(self):
         return self.element

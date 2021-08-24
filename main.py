@@ -6,10 +6,12 @@ from Element import Element
 
 
 if __name__ == "__main__":
-    reader('Periodic Table of Elements.csv', Element)
+    elements = reader('Periodic Table of Elements.csv', Element)
     header('Periodic Table of Elements.csv')
     print(header('Periodic Table of Elements.csv'))
     print()
     test_function('Periodic Table of Elements.csv')
     print()
-    print(reader('Periodic Table of Elements.csv', Element))
+    print(elements)
+    print()
+    print(elements['1'])
